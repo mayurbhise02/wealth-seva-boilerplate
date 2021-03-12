@@ -1,0 +1,180 @@
+$btn-color : #28a745;
+$font-style :'Shippori Mincho B1', serif;
+*{margin: 0; padding: 0;}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-content h1{
+    font-size: 40px;
+    font-family: $font-style;
+    color: #F7A50C;
+}
+h2{
+    font-family: 'Shippori Mincho B1', serif;
+    color: #130086;
+}
+h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+p{
+    letter-spacing: 0.6px;
+    line-height: 25px;
+}
+.header-banner-main{
+    background-color: #14008A;
+    color: white; 
+}
+.circle-menu{
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    clip-path: circle();
+    position: absolute;
+    top: -890px;
+    right: 0;
+    display: none;
+}
+.btn-style{
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: $btn-color;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-link{
+    color: #F7A50C!important;
+    margin: 0 20px;
+    font-weight: 900 !important;
+    &:hover{
+    opacity: 0.8;
+    }
+}
+.banner-main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 46px 0;
+}
+.banner-content{
+    margin-top: 0;
+}
+.banner-Img{
+    margin-top: 50px;
+    position: relative;
+}
+.banner-Img img{
+    width: 354px;
+    position: unset;
+    top: -318px;
+    left: -170px;
+    bottom: 0px;
+    right: 0px;
+}
+.banner-radius{
+    height: 550px;
+    background-color: #14008A;
+    // clip-path: polygon(100% 0, 100% 30%, 88% 34%, 64% 38%, 50% 38%, 34% 36%, 21% 32%, 10% 27%, 0 21%, 0 0);
+    // clip-path: polygon(100% 0, 100% 44%, 88% 47%, 68% 51%, 55% 50%, 41% 45%, 28% 35%, 19% 25%, 11% 16%, 0 0);
+    clip-path: polygon(100% 0, -13% 0%, 2% 15%, 4% 17%, 7% 20%, 10% 23%, 12% 25%, 14% 27%, 17% 30%, 20% 33%, 22% 35%, 25% 38%, 26% 39%, 29% 42%, 32% 45%, 35% 48%, 38% 51%, 42% 55%, 48% 61%, 49% 62%, 53% 65%, 56% 67%, 58% 68%, 62% 70%, 67% 72%, 71% 73%, 77% 74%, 80% 74%, 84% 73%, 89% 71%, 94% 68%, 97% 66%, 100% 64%);
+
+    display: none;
+    border: 1px solid #130086;
+    position: relative;
+    top: -1px;
+}
+.investor-main{
+    padding: 60px 20px;
+}
+.investor-head{
+    font-size: 40px;
+}
+.investor-wrapper{
+    margin-bottom: 100px;
+}
+.wrap-order{
+    order: 2;
+}
+.wrap-order-img{
+    order: 1;
+}
+.wrapper-content h2{
+    font-size: 35px;
+}
+.form-control{
+    font-size: 15px;
+}
+.footer-form{
+    text-align: center;
+    padding: 30px 25px;
+}
+
+.footer-map{
+    padding: 0;
+}
+form .btn{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(70,106,246);
+}
+    
+    /* Medium devices (tablets, 768px and up) */
+                                                                                                
+        @media (min-width: 768px) {
+            
+        }
+    /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .banner-content h1{
+                font-size: 49px;
+            }
+            .nav-link{
+                color: black!important;
+            }
+            .banner-content{
+                text-align: left;
+            }
+            .banner-content{
+                margin-top: 180px;
+            }
+            .banner-Img img{
+                width: 970px;
+                position: absolute;
+                }
+            .investor-head{
+                font-size: 55px;
+            }
+            .footer-form{
+                text-align: left;
+                padding: 0;
+            }
+            
+            .investor-main{
+                padding: 0 20px;
+            }
+            .wrap-order{
+                order: 1;
+            }
+            .wrap-order-img{
+                order: 2;
+            }
+            .wrapper-content h2{
+                font-size: 44px;
+            }
+            .nav-link{
+                color: white!important;
+                }
+            }
+            
+    /* Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            .circle-menu{
+                display: block;
+            }
+            .banner-radius{
+                display: block;
+            }
+            .nav-link{
+                color: gray!important;
+                }
+            }
